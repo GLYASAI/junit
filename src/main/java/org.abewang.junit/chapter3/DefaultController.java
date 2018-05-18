@@ -25,7 +25,7 @@ public class DefaultController implements Controller {
             throw new RuntimeException(msg);  // 可以改进为NoSuitableRequestHandlerException
         }
 
-        return (RequestHandler) requestHandlers.get(request.getName());
+        return requestHandlers.get(request.getName());
     }
 
     /**
