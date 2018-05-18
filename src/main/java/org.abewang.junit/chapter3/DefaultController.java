@@ -11,7 +11,7 @@ public class DefaultController implements Controller {
     /**
      * 请求处理器的注册表
      */
-    private Map<String, RequestHandler> requestHandlers = new HashMap();
+    private Map<String, RequestHandler> requestHandlers = new HashMap<>();
 
     /**
      * 为接收的请求获取requestHandler
