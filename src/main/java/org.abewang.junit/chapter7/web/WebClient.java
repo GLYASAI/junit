@@ -11,7 +11,7 @@ import java.net.URL;
  * @Author Abe
  * @Date 2018/5/21.
  */
-public class WebClient1 {
+public class WebClient {
     public String getContent(URL url) {
         StringBuilder s = new StringBuilder();
         try {

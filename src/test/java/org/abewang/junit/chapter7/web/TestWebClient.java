@@ -12,7 +12,7 @@ import static org.junit.Assert.assertEquals;
  * @Author Abe
  * @Date 2018/5/21.
  */
-public class TestWebClient1 {
+public class TestWebClient {
     @Test
     public void testGetContentOk() throws MalformedURLException {
         TestableWebClient client = new TestableWebClient();

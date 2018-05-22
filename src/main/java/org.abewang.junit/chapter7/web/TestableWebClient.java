@@ -8,7 +8,7 @@ import java.net.URL;
  * @Author Abe
  * @Date 2018/5/21.
  */
-public class TestableWebClient extends WebClient1 {
+public class TestableWebClient extends WebClient {
     private HttpURLConnection httpURLConnection;
 
     public void setHttpURLConnection(HttpURLConnection httpURLConnection) {

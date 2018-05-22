@@ -14,8 +14,9 @@ import java.net.URL;
 public class WebClient2 {
     public String getContent(ConnectionFactory connectionFactory) {
         StringBuilder s = new StringBuilder();
+        InputStream is;
         try {
-            InputStream is = connectionFactory.getData();
+             is = connectionFactory.getData();
             int count;
             while ((count = is.read()) != -1) {
                 s.append(new String(Character.toChars(count)));
@@ -24,7 +25,13 @@ public class WebClient2 {
             e.printStackTrace();
             return null;
         }
-
+        if (is != null) {
+            try {
+                is.close();
+            } catch (Exception e) {
+                return null;
+            }
+        }
 
         return s.toString();
     }
